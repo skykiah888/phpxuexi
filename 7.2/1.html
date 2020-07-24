@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript" type="text/javascript" src="http://ip.ws.126.net/ipquery"></script>
+    <script>
+        if (localAddress.province == '北京市' || localAddress.city == '上海市' || localAddress.city == '深圳市' ||
+            localAddress.city == ' 广州市') {
+            //屏蔽地区显示的内容
+            window.location.href = "1.html";
+            console.log('12')
+
+        } else {
+            if (/Kwai\/|AllowKsCallApp/g.test(navigator.userAgent) || /kuaishou/i.test(document.referrer)) {
+                //快手app&&快手来源显示
+                window.location.href = '1.html';
+
+            } else {
+                //非快手app&&快手来源显示
+                window.location.href = 'index-7157219.html';
+
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
