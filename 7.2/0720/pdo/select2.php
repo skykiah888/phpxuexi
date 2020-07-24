@@ -16,4 +16,4 @@ foreach ($users as $user) {
 }
 
 // 3. 关闭
-$pdo = null;
+$pdo = null; 
